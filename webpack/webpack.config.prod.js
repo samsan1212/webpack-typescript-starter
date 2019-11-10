@@ -1,14 +1,9 @@
-const merge = require("webpack-merge");
-const webpack = require("webpack");
-const common = require("./webpack.common.js");
-const plugins = require("./utils/plugins");
 const TerserPlugin = require("terser-webpack-plugin");
+const merge = require("webpack-merge");
+const common = require("./webpack.common");
 
 module.exports = merge(common, {
     mode: "production",
-    output: {
-        publicPath: "https://www.asiahospitalitycareers.com/assets/",
-    },
     performance: {
         hints: "warning",
     },
@@ -21,7 +16,9 @@ module.exports = merge(common, {
                 terserOptions: {
                     ecma: 5,
                     ie8: false,
-                    pure_funcs: ["console.debug", "console.log", "console.info", "console.warn"],
+                    compress: {
+                        pure_funcs: ["console.debug", "console.log", "console.info", "console.warn"],
+                    },
                     safari10: true,
                     sourceMap: false,
                     warnings: true,
@@ -29,7 +26,4 @@ module.exports = merge(common, {
             }),
         ],
     },
-    plugins: [
-        plugins.createHtml("production"),
-    ],
 });

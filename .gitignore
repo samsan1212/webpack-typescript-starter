@@ -13,4 +13,5 @@ package-lock.json
 yarn.lock
 
 # build destination
+bin/
 dist/
