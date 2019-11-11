@@ -2,7 +2,7 @@
 
 Love **Webpack**? Love **Typescript**? Feel frustrated of starting a Webpack + Typescript project?
 
-Webpack Typescript Starter comes to help!!
+***Webpack Typescript Starter comes to help*** :muscle::muscle::muscle:
 
 ## Philosophy ##
 
@@ -23,16 +23,45 @@ it **does not compete** with those wonderful frontend starters, e.g.
 Webpack Typescript Starter only provide an enviornment of Webpack + Typescript, and letting you guys do your magic in there :wink:
 
 ## Getting Started
-1. Clone this project
+1.  Clone this project
+
+    ```
+    git clone https://github.com/samsan1212/webpack-typescript-starter.git
+    ```
+2.  Under the project root directory, run
+
+    ```
+    npm install
+    ```
+
+    OR
+    
+    ```
+    yarn
+    ```
+3.  Bob's your uncle:tada::tada::tada:
+
+    You can perform your magic inside **```src```** folder
+
+## Configurations
+### HTML Template file
+In the directory ```webpack/plugins```, there is a template HTML file ```html-template.html```.
+
+The starter generates a HTML file ```bin/index.html``` with the script tags of the bundled javascript files, using this template HTML in the compile time.
+
+If you need the HTML file containing only the script tags of the bundled javscript files, you can empty the content inside the template HTML. *(Especially for those who want to migrate custom Javascripts to existing HTML template engine)*
+
+### noHTML
+In ```package.json```, there is a config ```noHTML```
+
+If you are writing NodeJS program, you probably won't need the generated HTML file.
+
+In this case, you can type ```yes``` in the config ```noHTML```,
+
+```json
+"config": {
+  "noHTML": "yes"
+}
 ```
-git clone https://github.com/samsan1212/webpack-typescript-starter.git
-```
-2. Under the project root directory, run
-```
-npm install
-```
-OR
-```
-yarn
-```
-3. Bob's your uncle! :tada::tada::tada: You can perform your magic inside **```src```** folder
+
+then no HTML will be emitted during the compile time.
