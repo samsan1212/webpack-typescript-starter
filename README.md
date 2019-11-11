@@ -20,6 +20,19 @@ it **does not compete** with those wonderful frontend starters, e.g.
 [VueJS CLI](https://cli.vuejs.org/),
 [Angular](https://angular.io/guide/setup-local)
 
-Webpack Typescript Starter only provide an enviornment of Webpack + Typescript,
+Webpack Typescript Starter only provide an enviornment of Webpack + Typescript, and letting you guys do your magic in there :wink:
 
-and letting you guys do your magic in there :wink:
+## Getting Started
+1. Clone this project
+```
+git clone https://github.com/samsan1212/webpack-typescript-starter.git
+```
+2. Under the project root directory, run
+```
+npm install
+```
+OR
+```
+yarn
+```
+3. Bob's your uncle! :tada::tada::tada: You can perform your magic inside **```src```** folder
