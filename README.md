@@ -28,6 +28,9 @@ Webpack Typescript Starter only provide an enviornment of Webpack + Typescript, 
     ```
     git clone https://github.com/samsan1212/webpack-typescript-starter.git
     ```
+    
+    OR create a new repository from this template by navigating to [https://github.com/samsan1212/webpack-typescript-starter/generate](https://github.com/samsan1212/webpack-typescript-starter/generate "Github generate from template repository")
+    
 2.  Under the project root directory, run
 
     ```
