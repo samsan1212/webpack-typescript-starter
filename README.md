@@ -13,7 +13,7 @@ With this starter, you can easily set up a
 * Frontend project
 * Small script migrating to an existing HTML template engine
 
-Althought Webpack Typescript Starter can be the starter of a frontend project,
+Although Webpack Typescript Starter can be the starter of a frontend project,
 it **does not compete** with those wonderful frontend starters, e.g. 
 [Create React App](https://create-react-app.dev/), 
 [GatsbyJS](https://www.gatsbyjs.org/), 
