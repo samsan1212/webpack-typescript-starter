@@ -1,6 +1,7 @@
 {
     "extends": [
-        "tslint:latest"
+        "tslint:latest",
+        "tslint-react"
     ],
     "rulesDirectory": [
         "node_modules/rxjs-tslint"
@@ -9,6 +10,8 @@
         "align": false,
         "arrow-parens": false,
         "interface-name": false,
+        "jsx-boolean-value": false,
+        "jsx-no-multiline-js": false,
         "max-line-length": false,
         "no-console": false,
         "no-implicit-dependencies": false,

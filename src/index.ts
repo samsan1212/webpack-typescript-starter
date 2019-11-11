@@ -1,3 +1,3 @@
-import app from "./app";
+#!/usr/bin/env node
 
-app();
+console.log("Installing projects...");

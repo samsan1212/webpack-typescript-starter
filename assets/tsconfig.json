@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"target": "es5",
+		"target": "es5", // you can switch to es6 if you are running NodeJS
 		"lib": [
 			"dom",
 			"dom.iterable",
@@ -12,9 +12,17 @@
 		"allowSyntheticDefaultImports": true,
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
-		"module": "commonjs",
+		/** 
+			Please note that 
+			"Node.js fully supports ECMAScript modules as they are currently specified and 
+			provides limited interoperability between them and the existing module format, CommonJS."
+			To avoid unexpected issue, please change the module to "commonjs" when you run NodeJS.
+			For more information, please visit https://nodejs.org/api/esm.html#esm_introduction
+		*/
+		"module": "esnext",
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
+		"isolatedModules": true,
 		"jsx": "react",
 		"importHelpers": true,
 		"experimentalDecorators": true,
@@ -27,8 +35,16 @@
 		"noImplicitReturns": true,
 		"noImplicitThis": false,
 		"pretty": true,
-		"outDir": "bin",
-		"rootDir": "src"
+		"baseUrl": "src",
+		"paths": {
+			/** 
+				you can add path alias for Typescript,
+				but make sure that you have also added the alias in webpack config
+			*/
+			"lib/*": [
+				"lib/*"
+			]
+		}
 	},
 	"include": [
 		"src/**/*"

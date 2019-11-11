@@ -2,42 +2,26 @@
   "name": "webpack-typescript-starter",
   "version": "1.0.0",
   "description": "A webpack starter for Typescript project",
-  "main": "index.js",
-  "repository": "https://github.com/samsan1212/webpack-typescript-starter.git",
-  "author": "Sam Tsz San, CHAN",
+  "main": "bin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samsan1212/webpack-typescript-starter.git"
+  },
+  "author": "Sam Tsz San, CHAN <samchan148@gmail.com>",
   "license": "MIT",
-  "private": false,
   "scripts": {
-    "build": "webpack --config ./webpack/webpack.config.dev.js --verbose --colors",
-    "build:prod": "webpack --config ./webpack/webpack.config.prod.js --verbose --colors"
+    "build": "tsc",
+    "install": "bin/index.js",
+    "test": "echo \"No test specified\""
   },
   "dependencies": {
     "tslib": "^1.10.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.7",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.2.0",
-    "file-loader": "^4.2.0",
-    "html-webpack-plugin": "^3.2.0",
-    "postcss-loader": "^3.0.0",
     "rxjs-tslint": "^0.1.7",
-    "style-loader": "^1.0.0",
-    "terser-webpack-plugin": "^2.2.1",
-    "thread-loader": "^2.1.3",
-    "ts-loader": "^6.2.1",
-    "ts-node": "^8.4.1",
     "tsconfig-paths": "^3.9.0",
     "tslint": "^5.20.1",
-    "tslint-loader": "^3.5.4",
-    "tslint-react": "^4.1.0",
-    "typescript": "^3.7.2",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0",
-    "webpack-merge": "^4.2.2"
-  },
-  "config": {
-    "noHTML": ""
+    "typescript": "^3.7.2"
   }
 }
