@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A webpack starter for Typescript project",
   "main": "bin/index.js",
+  "bin": {
+    "webpack-ts-starter": "bin/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/samsan1212/webpack-typescript-starter.git"
@@ -11,7 +14,6 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "install": "tsc && node bin/index.js",
     "test": "echo \"No test specified\""
   },
   "dependencies": {
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@types/node": "^12.12.7",
+    "commander": "^4.0.1",
     "rxjs-tslint": "^0.1.7",
     "tsconfig-paths": "^3.9.0",
     "tslint": "^5.20.1",
