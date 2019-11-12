@@ -20,7 +20,7 @@ it **does not compete** with those wonderful frontend starters, e.g.
 [VueJS CLI](https://cli.vuejs.org/),
 [Angular](https://angular.io/guide/setup-local)
 
-Webpack Typescript Starter only provide an enviornment of Webpack + Typescript, and letting you guys do your magic in there :wink:
+Webpack Typescript Starter only provide an environment of Webpack + Typescript, and letting you guys do your magic in there :wink:
 
 ## Getting Started
 1.  Clone this project
