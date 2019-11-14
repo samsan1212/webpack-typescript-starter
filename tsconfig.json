@@ -28,10 +28,10 @@
 		"noImplicitThis": false,
 		"pretty": true,
 		"outDir": "bin",
-		"rootDir": "src"
+		"rootDir": "scripts"
 	},
 	"include": [
-		"src/**/*"
+		"scripts/**/*"
 	],
 	"exclude": [
 		"node_modules",
