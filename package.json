@@ -4,7 +4,7 @@
   "description": "A webpack starter for Typescript project",
   "main": "bin/index.js",
   "bin": {
-    "webpack-ts-starter": "scripts/index.js"
+    "webpack-typescript-starter": "scripts/index.js"
   },
   "repository": {
     "type": "git",
