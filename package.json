@@ -4,7 +4,7 @@
   "description": "A webpack starter for Typescript project",
   "main": "bin/index.js",
   "bin": {
-    "webpack-ts-starter": "bin/index.js"
+    "webpack-ts-starter": "scripts/index.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,6 @@
   "author": "Sam Tsz San, CHAN <samchan148@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
     "test": "echo \"No test specified\""
   },
   "engines": {
@@ -26,12 +25,5 @@
     "fs-extra": "^8.1.0",
     "tslib": "^1.10.0"
   },
-  "devDependencies": {
-    "@types/fs-extra": "^8.0.1",
-    "@types/node": "^12.12.7",
-    "rxjs-tslint": "^0.1.7",
-    "tsconfig-paths": "^3.9.0",
-    "tslint": "^5.20.1",
-    "typescript": "^3.7.2"
-  }
+  "devDependencies": {}
 }

@@ -17,8 +17,6 @@
 //   /!\ DO NOT MODIFY THIS FILE /!\
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-import webpackTypescriptStarter from "./starter.scripts";
-
 const currentNodeVersion = process.versions.node;
 const semver = currentNodeVersion.split(".");
 const major = parseInt(semver[0], 10);
@@ -33,4 +31,4 @@ if (major < 8) {
     process.exit(1);
 }
 
-webpackTypescriptStarter();
+require("./cli");
